@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
   devise_for :users, path: 'accounts'
   root 'sessions#index'
   resources :users, only: [:index, :show] do 
